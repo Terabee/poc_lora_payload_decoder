@@ -1,6 +1,6 @@
 import globals from "globals";
 import pluginJs from "@eslint/js";
-import stylisticJs from '@stylistic/eslint-plugin-js'
+import stylisticJs from '@stylistic/eslint-plugin-js';
 import jest from "eslint-plugin-jest";
 
 
@@ -13,13 +13,13 @@ export default [
     rules: {
       '@stylistic/js/semi': ["error", "always"],
     },
+
+  },
+  {
     files: [
       '*test.js'
     ],
-    ...jest.configs['flat/recommended']
+    ...jest.configs['flat/recommended'],
   },
   pluginJs.configs.recommended,
-
-
-
 ];

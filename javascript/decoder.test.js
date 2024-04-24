@@ -343,7 +343,7 @@ describe('registerCommand', () => {
 
     const fport = 256;
     expect(() => {
-      registerCommand(registered_commands_map, fport, "CMD_ID_FOO", 200)
+      registerCommand(registered_commands_map, fport, "CMD_ID_FOO", 200);
     }).toThrow("fport must be between 1 and 255");
   });
 
@@ -352,7 +352,7 @@ describe('registerCommand', () => {
 
     const fport = 30;
     expect(() => {
-      registerCommand(registered_commands_map, fport, "CMD_ID_WRONG", 255)
+      registerCommand(registered_commands_map, fport, "CMD_ID_WRONG", 255);
     }).toThrow("cmd_id must be between 0 and 254");
   });
 
